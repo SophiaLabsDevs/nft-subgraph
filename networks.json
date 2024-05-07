@@ -1,0 +1,20 @@
+{
+  "mainnet": {
+    "SentienceModule5": {
+      "address": "0x5335F23eBeef15906D348Cda4Fba6Abcb584Ac3B",
+      "startBlock": 18828935
+    },
+    "SentienceModule4": {
+      "address": "0x388F65b210314C5052969b669a60C5b8a9983FdF"
+    },
+    "SentienceModule3": {
+      "address": "0x388F65b210314C5052969b669a60C5b8a9983FdF"
+    },
+    "SentienceModule2": {
+      "address": "0x5335F23eBeef15906D348Cda4Fba6Abcb584Ac3B"
+    },
+    "SentienceModule1": {
+      "address": "0x66705a07fa726e19BB132c8d8BEcBe6713670160"
+    }
+  }
+}

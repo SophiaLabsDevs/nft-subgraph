@@ -1,0 +1,80 @@
+
+type SentienceModule5Transfer @entity {
+  id: Bytes!
+  from: Bytes! # address
+  to: Bytes! # address
+  tokenId: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type SentienceModule4Transfer @entity {
+  id: Bytes!
+  from: Bytes! # address
+  to: Bytes! # address
+  tokenId: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type SentienceModule3Transfer @entity {
+  id: Bytes!
+  from: Bytes! # address
+  to: Bytes! # address
+  tokenId: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type SentienceModule2Transfer @entity {
+  id: Bytes!
+  from: Bytes! # address
+  to: Bytes! # address
+  tokenId: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type SentienceModule1Transfer @entity {
+  id: Bytes!
+  from: Bytes! # address
+  to: Bytes! # address
+  tokenId: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type HolderSentienceOne @entity {
+  id: Bytes! #holder address
+  holdingIds: [BigInt!]! # uint256[]
+  holdCount: BigInt! # uint256
+}
+
+type HolderSentienceTwo @entity {
+  id: Bytes! #holder address
+  holdingIds: [BigInt!]! # uint256[]
+  holdCount: BigInt! # uint256
+}
+
+type HolderSentienceThree @entity {
+  id: Bytes! #holder address
+  holdingIds: [BigInt!]! # uint256[]
+  holdCount: BigInt! # uint256
+}
+
+type HolderSentienceFour @entity {
+  id: Bytes! #holder address
+  holdingIds: [BigInt!]! # uint256[]
+  holdCount: BigInt! # uint256
+}
+
+type HolderSentienceFive @entity {
+  id: Bytes! #holder address
+  holdingIds: [BigInt!]! # uint256[]
+  holdCount: BigInt! # uint256
+}

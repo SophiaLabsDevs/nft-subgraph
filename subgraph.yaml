@@ -1,0 +1,111 @@
+specVersion: 1.0.0
+indexerHints:
+  prune: auto
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: SentienceModule5
+    network: mainnet
+    source:
+      address: "0x5335F23eBeef15906D348Cda4Fba6Abcb584Ac3B"
+      abi: SentienceModule5
+      startBlock: 18828935
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - SentienceModule5Transfer
+        - HolderSentienceFive
+      abis:
+        - name: SentienceModule5
+          file: ./abis/SentienceModule5.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,indexed uint256)
+          handler: handleTransferFive
+      file: ./src/sentience-module-5.ts
+  - kind: ethereum
+    name: SentienceModule4
+    network: mainnet
+    source:
+      address: "0x66705a07fa726e19BB132c8d8BEcBe6713670160"
+      abi: SentienceModule4
+      startBlock: 18828935
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - SentienceModule4Transfer
+        - HolderSentienceFour
+      abis:
+        - name: SentienceModule4
+          file: ./abis/SentienceModule4.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,indexed uint256)
+          handler: handleTransferFour
+      file: ./src/sentience-module-4.ts
+  - kind: ethereum
+    name: SentienceModule3
+    network: mainnet
+    source:
+      address: "0x70aC7f95A8D29E6a2b7d6C71B3001114BE156D3e"
+      abi: SentienceModule3
+      startBlock: 18828935
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - SentienceModule3Transfer
+        - HolderSentienceThree
+      abis:
+        - name: SentienceModule3
+          file: ./abis/SentienceModule3.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,indexed uint256)
+          handler: handleTransferThree
+      file: ./src/sentience-module-3.ts
+  - kind: ethereum
+    name: SentienceModule2
+    network: mainnet
+    source:
+      address: "0xEEF78a3baA3132B954f3Ad73b20aff070a489E1E"
+      abi: SentienceModule2
+      startBlock: 18828935
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - SentienceModule2Transfer
+        - HolderSentienceTwo
+      abis:
+        - name: SentienceModule2
+          file: ./abis/SentienceModule2.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,indexed uint256)
+          handler: handleTransferTwo
+      file: ./src/sentience-module-2.ts
+  - kind: ethereum
+    name: SentienceModule1
+    network: mainnet
+    source:
+      address: "0x388F65b210314C5052969b669a60C5b8a9983FdF"
+      abi: SentienceModule1
+      startBlock: 18828935
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - SentienceModule1Transfer
+        - HolderSentienceOne
+      abis:
+        - name: SentienceModule1
+          file: ./abis/SentienceModule1.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,indexed uint256)
+          handler: handleTransferOne
+      file: ./src/sentience-module-1.ts
