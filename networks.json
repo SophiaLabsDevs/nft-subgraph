@@ -49,5 +49,31 @@
       "address": "0x1981A86783b8b8cE6d03caeA58C263E0806Fa01E",
       "startBlock": 5526164
     }
+  },
+  "base": {
+    "SentienceModule5": {
+      "address": "0xEa81D2840A829f15Ed2174c6D856e38BBd93B5CA",
+      "startBlock": 16228978
+    },
+    "SentienceModule4": {
+      "address": "0xb05F479e00d7Fe6e7a88701ec299894c199339EE",
+      "startBlock": 16228978
+    },
+    "SentienceModule3": {
+      "address": "0x9023622629c5B9ca9A1bc88999e729Dd42fA2654",
+      "startBlock": 16228978
+    },
+    "SentienceModule2": {
+      "address": "0x96185c5AEE7BC71376DA00e3c06B377e28596aD4",
+      "startBlock": 16228978
+    },
+    "SentienceModule1": {
+      "address": "0x277D4D0787731B688cd687A74096b5A88a72c9a8",
+      "startBlock": 16228978
+    },
+    "ERC6551Registry": {
+      "address": "0x1981A86783b8b8cE6d03caeA58C263E0806Fa01E", //CHANGE HERE
+      "startBlock": 5526164 //CHANGE HERE
+    }
   }
 }
