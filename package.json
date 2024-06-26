@@ -1,18 +1,20 @@
 {
-  "name": "nft-sentience",
+  "name": "sophiaverse",
   "license": "UNLICENSED",
   "scripts": {
     "codegen": "graph codegen",
     "build": "graph build",
-    "deploy": "graph deploy --node https://api.studio.thegraph.com/deploy/ nft-sentience",
-    "create-local": "graph create --node http://localhost:8020/ nft-sentience",
-    "remove-local": "graph remove --node http://localhost:8020/ nft-sentience",
-    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 nft-sentience",
+    "deploy": "graph deploy --node https://api.studio.thegraph.com/deploy/ sophiaverse",
+    "create-local": "graph create --node http://localhost:8020/ sophiaverse",
+    "remove-local": "graph remove --node http://localhost:8020/ sophiaverse",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 sophiaverse",
     "test": "graph test"
   },
   "dependencies": {
     "@graphprotocol/graph-cli": "0.67.2",
     "@graphprotocol/graph-ts": "0.32.0"
   },
-  "devDependencies": { "matchstick-as": "0.5.0" }
+  "devDependencies": {
+    "matchstick-as": "0.5.0"
+  }
 }
