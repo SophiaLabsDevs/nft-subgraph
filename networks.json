@@ -75,5 +75,49 @@
       "address": "0x34773E620cDCBFf1eE05D46feeFFfF34aaa01854",
       "startBlock": 16228978
     }
+  },
+  "bsc": {
+    "SentienceModule5": {
+      "address": "0x0000000000000000000000000000000000000000"
+    },
+    "SentienceModule4": {
+      "address": "0x0000000000000000000000000000000000000000"
+    },
+    "SentienceModule3": {
+      "address": "0x0000000000000000000000000000000000000000"
+    },
+    "SentienceModule2": {
+      "address": "0x0000000000000000000000000000000000000000"
+    },
+    "SentienceModule1": {
+      "address": "0xCC9D28E38f5ca73E5b5A248C28d2eACf2Eb5B5E8",
+      "startBlock": 34525547
+    },
+    "ERC6551Registry": {
+      "address": "0x821db01e7e4C3ec2BC2Aa30A59DD11bCc1B5b951",
+      "startBlock": 34580223
+    }
+  },
+  "matic": {
+    "SentienceModule5": {
+      "address": "0x0000000000000000000000000000000000000000"
+    },
+    "SentienceModule4": {
+      "address": "0x0000000000000000000000000000000000000000"
+    },
+    "SentienceModule3": {
+      "address": "0x0000000000000000000000000000000000000000"
+    },
+    "SentienceModule2": {
+      "address": "0x0000000000000000000000000000000000000000"
+    },
+    "SentienceModule1": {
+      "address": "0x7C0bcDb1df296f6E11216365882dEA056c151A97",
+      "startBlock": 51356908
+    },
+    "ERC6551Registry": {
+      "address": "0xaD353cA798cD921ae842d0E7e117a654DdF83247",
+      "startBlock": 58303936
+    }
   }
 }
