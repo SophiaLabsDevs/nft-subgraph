@@ -72,8 +72,8 @@
       "startBlock": 16228978
     },
     "ERC6551Registry": {
-      "address": "0x1981A86783b8b8cE6d03caeA58C263E0806Fa01E", //CHANGE HERE
-      "startBlock": 5526164 //CHANGE HERE
+      "address": "0x34773E620cDCBFf1eE05D46feeFFfF34aaa01854",
+      "startBlock": 16228978
     }
   }
 }
