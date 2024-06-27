@@ -6,3 +6,12 @@ graph auth --studio $APIKEY
 cd nft-sentience
 graph codegen && graph build
 graph deploy --studio nft-sentience
+
+graph deploy sophiaverse --deploy-key XXX --network mainnet
+
+
+
+
+
+
+
