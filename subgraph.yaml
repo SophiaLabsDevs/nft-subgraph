@@ -6,11 +6,11 @@ schema:
 dataSources:
   - kind: ethereum
     name: SentienceModule5
-    network: mainnet
+    network: sepolia
     source:
       abi: SentienceModule5
-      address: "0x5335F23eBeef15906D348Cda4Fba6Abcb584Ac3B"
-      startBlock: 18828935
+      address: "0xF808252aab4D5aeD10C8a601198319084B0c7e6d"
+      startBlock: 19610784
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
@@ -27,11 +27,11 @@ dataSources:
       file: ./src/sentience-module-5.ts
   - kind: ethereum
     name: SentienceModule4
-    network: mainnet
+    network: sepolia
     source:
       abi: SentienceModule4
-      address: "0x66705a07fa726e19BB132c8d8BEcBe6713670160"
-      startBlock: 18828935
+      address: "0x9b031a4f8878Ad4E5F022678c0226704bf66e77c"
+      startBlock: 19610784
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
@@ -48,11 +48,11 @@ dataSources:
       file: ./src/sentience-module-4.ts
   - kind: ethereum
     name: SentienceModule3
-    network: mainnet
+    network: sepolia
     source:
       abi: SentienceModule3
-      address: "0x70aC7f95A8D29E6a2b7d6C71B3001114BE156D3e"
-      startBlock: 18828935
+      address: "0xb8b6Fb00EaA741aa070954d55495616358a74A7d"
+      startBlock: 19610784
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
@@ -69,11 +69,11 @@ dataSources:
       file: ./src/sentience-module-3.ts
   - kind: ethereum
     name: SentienceModule2
-    network: mainnet
+    network: sepolia
     source:
       abi: SentienceModule2
-      address: "0xEEF78a3baA3132B954f3Ad73b20aff070a489E1E"
-      startBlock: 18828935
+      address: "0x5d426CF009D91172AA0584935C59F28434fD572a"
+      startBlock: 19610784
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
@@ -90,11 +90,11 @@ dataSources:
       file: ./src/sentience-module-2.ts
   - kind: ethereum
     name: SentienceModule1
-    network: mainnet
+    network: sepolia
     source:
       abi: SentienceModule1
-      address: "0x388F65b210314C5052969b669a60C5b8a9983FdF"
-      startBlock: 18828935
+      address: "0xb0FB186eE2dA2d13BF52Cf917559f5D576797D15"
+      startBlock: 19610784
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
@@ -111,10 +111,11 @@ dataSources:
       file: ./src/sentience-module-1.ts
   - kind: ethereum
     name: ERC6551Registry
-    network: mainnet
+    network: sepolia
     source:
       abi: ERC6551Registry
-      address: "0x2260d743ED99D4Fb5fE051022fC2AfdE4B538362"
+      address: "0x1981A86783b8b8cE6d03caeA58C263E0806Fa01E"
+      startBlock: 5526164
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
