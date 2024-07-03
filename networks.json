@@ -52,28 +52,28 @@
   },
   "base": {
     "SentienceModule5": {
-      "address": "0xEa81D2840A829f15Ed2174c6D856e38BBd93B5CA",
-      "startBlock": 16228978
+      "address": "0x6164f4049124e32245d57FA151ad643F79c8A1BD",
+      "startBlock": 16396111
     },
     "SentienceModule4": {
-      "address": "0xb05F479e00d7Fe6e7a88701ec299894c199339EE",
-      "startBlock": 16228978
+      "address": "0xA3ca1f66616035fFf903688ee842711aE76F2f96",
+      "startBlock": 16396111
     },
     "SentienceModule3": {
-      "address": "0x9023622629c5B9ca9A1bc88999e729Dd42fA2654",
-      "startBlock": 16228978
+      "address": "0xB0E1CF7900b5B357C86DA275f703907C6cb27199",
+      "startBlock": 16396111
     },
     "SentienceModule2": {
-      "address": "0x96185c5AEE7BC71376DA00e3c06B377e28596aD4",
-      "startBlock": 16228978
+      "address": "0xA09b151e4D0c580c357c10Ac328f202aC36C3640",
+      "startBlock": 16396111
     },
     "SentienceModule1": {
-      "address": "0x277D4D0787731B688cd687A74096b5A88a72c9a8",
-      "startBlock": 16228978
+      "address": "0xac0C6A9c15B346CfeEfaD32b5a4103C189714218",
+      "startBlock": 16396111
     },
     "ERC6551Registry": {
-      "address": "0x34773E620cDCBFf1eE05D46feeFFfF34aaa01854",
-      "startBlock": 16228978
+      "address": "0x67Ab5D1E6e790F44fDE290c0EEFBb2e609994506",
+      "startBlock": 16396111
     }
   },
   "bsc": {
@@ -95,7 +95,7 @@
     },
     "ERC6551Registry": {
       "address": "0x821db01e7e4C3ec2BC2Aa30A59DD11bCc1B5b951",
-      "startBlock": 34580223
+      "startBlock": 34525547
     }
   },
   "matic": {
@@ -117,7 +117,7 @@
     },
     "ERC6551Registry": {
       "address": "0xaD353cA798cD921ae842d0E7e117a654DdF83247",
-      "startBlock": 58303936
+      "startBlock": 51356908
     }
   }
 }
