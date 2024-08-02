@@ -6,10 +6,11 @@ schema:
 dataSources:
   - kind: ethereum
     name: SentienceModule5
-    network: bsc
+    network: base
     source:
       abi: SentienceModule5
-      address: "0x0000000000000000000000000000000000000000"
+      address: "0x6164f4049124e32245d57FA151ad643F79c8A1BD"
+      startBlock: 16396111
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
@@ -26,10 +27,11 @@ dataSources:
       file: ./src/sentience-module-5.ts
   - kind: ethereum
     name: SentienceModule4
-    network: bsc
+    network: base
     source:
       abi: SentienceModule4
-      address: "0x0000000000000000000000000000000000000000"
+      address: "0xA3ca1f66616035fFf903688ee842711aE76F2f96"
+      startBlock: 16396111
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
@@ -46,10 +48,11 @@ dataSources:
       file: ./src/sentience-module-4.ts
   - kind: ethereum
     name: SentienceModule3
-    network: bsc
+    network: base
     source:
       abi: SentienceModule3
-      address: "0x0000000000000000000000000000000000000000"
+      address: "0xB0E1CF7900b5B357C86DA275f703907C6cb27199"
+      startBlock: 16396111
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
@@ -66,10 +69,11 @@ dataSources:
       file: ./src/sentience-module-3.ts
   - kind: ethereum
     name: SentienceModule2
-    network: bsc
+    network: base
     source:
       abi: SentienceModule2
-      address: "0x0000000000000000000000000000000000000000"
+      address: "0xA09b151e4D0c580c357c10Ac328f202aC36C3640"
+      startBlock: 16396111
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
@@ -86,11 +90,11 @@ dataSources:
       file: ./src/sentience-module-2.ts
   - kind: ethereum
     name: SentienceModule1
-    network: bsc
+    network: base
     source:
       abi: SentienceModule1
-      address: "0xCC9D28E38f5ca73E5b5A248C28d2eACf2Eb5B5E8"
-      startBlock: 34525547
+      address: "0xac0C6A9c15B346CfeEfaD32b5a4103C189714218"
+      startBlock: 16396111
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
@@ -107,11 +111,11 @@ dataSources:
       file: ./src/sentience-module-1.ts
   - kind: ethereum
     name: ERC6551Registry
-    network: bsc
+    network: base
     source:
       abi: ERC6551Registry
-      address: "0x821db01e7e4C3ec2BC2Aa30A59DD11bCc1B5b951"
-      startBlock: 34525547
+      address: "0xa2a3561e1Aac9c0F18E1405CC1991c1359581C17"
+      startBlock: 16396111
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
