@@ -6,11 +6,11 @@ schema:
 dataSources:
   - kind: ethereum
     name: SentienceModule5
-    network: base
+    network: sepolia
     source:
       abi: SentienceModule5
-      address: "0x6164f4049124e32245d57FA151ad643F79c8A1BD"
-      startBlock: 16396111
+      address: "0xF808252aab4D5aeD10C8a601198319084B0c7e6d"
+      startBlock: 5526164
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
@@ -27,11 +27,11 @@ dataSources:
       file: ./src/sentience-module-5.ts
   - kind: ethereum
     name: SentienceModule4
-    network: base
+    network: sepolia
     source:
       abi: SentienceModule4
-      address: "0xA3ca1f66616035fFf903688ee842711aE76F2f96"
-      startBlock: 16396111
+      address: "0x9b031a4f8878Ad4E5F022678c0226704bf66e77c"
+      startBlock: 5526164
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
@@ -48,11 +48,11 @@ dataSources:
       file: ./src/sentience-module-4.ts
   - kind: ethereum
     name: SentienceModule3
-    network: base
+    network: sepolia
     source:
       abi: SentienceModule3
-      address: "0xB0E1CF7900b5B357C86DA275f703907C6cb27199"
-      startBlock: 16396111
+      address: "0xb8b6Fb00EaA741aa070954d55495616358a74A7d"
+      startBlock: 5526164
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
@@ -69,11 +69,11 @@ dataSources:
       file: ./src/sentience-module-3.ts
   - kind: ethereum
     name: SentienceModule2
-    network: base
+    network: sepolia
     source:
       abi: SentienceModule2
-      address: "0xA09b151e4D0c580c357c10Ac328f202aC36C3640"
-      startBlock: 16396111
+      address: "0x5d426CF009D91172AA0584935C59F28434fD572a"
+      startBlock: 5526164
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
@@ -90,11 +90,11 @@ dataSources:
       file: ./src/sentience-module-2.ts
   - kind: ethereum
     name: SentienceModule1
-    network: base
+    network: sepolia
     source:
       abi: SentienceModule1
-      address: "0xac0C6A9c15B346CfeEfaD32b5a4103C189714218"
-      startBlock: 16396111
+      address: "0xb0FB186eE2dA2d13BF52Cf917559f5D576797D15"
+      startBlock: 5526164
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
@@ -111,11 +111,11 @@ dataSources:
       file: ./src/sentience-module-1.ts
   - kind: ethereum
     name: ERC6551Registry
-    network: base
+    network: sepolia
     source:
       abi: ERC6551Registry
-      address: "0xa2a3561e1Aac9c0F18E1405CC1991c1359581C17"
-      startBlock: 16396111
+      address: "0x1981A86783b8b8cE6d03caeA58C263E0806Fa01E"
+      startBlock: 5526164
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
@@ -133,3 +133,35 @@ dataSources:
         - event: OwnershipTransferred(indexed address,indexed address)
           handler: handleOwnershipTransferred
       file: ./src/erc-6551-registry.ts
+  - kind: ethereum
+    name: Heirloom
+    network: sepolia
+    source:
+      address: "0x84464897824C77C0Ef39Ea611bAD719B66b2e5c6"
+      abi: Heirloom
+      startBlock: 5683199
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - ModuleBenefiaryReplaced
+        - ModuleCanceled
+        - ModuleClaimed
+        - ModuleReset
+        - ModuleSet
+      abis:
+        - name: Heirloom
+          file: ./abis/Heirloom.json
+      eventHandlers:
+        - event: ModuleBenefiaryReplaced(indexed address,indexed uint256,address,address)
+          handler: handleModuleBenefiaryReplaced
+        - event: ModuleCanceled(indexed address,indexed uint256,uint256)
+          handler: handleModuleCanceled
+        - event: ModuleClaimed(indexed address,indexed uint256,address)
+          handler: handleModuleClaimed
+        - event: ModuleReset(indexed address,indexed uint256,uint256)
+          handler: handleModuleReset
+        - event: ModuleSet(indexed address,indexed uint256,indexed address,uint256)
+          handler: handleModuleSet
+      file: ./src/heirloom.ts

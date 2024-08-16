@@ -22,6 +22,10 @@
     },
     "ERC6551Registry": {
       "address": "0x2260d743ED99D4Fb5fE051022fC2AfdE4B538362"
+    },
+    "Heirloom": {
+      "address": "0x0000000000000000000000000000000000000000",
+      "startBlock": 18828935
     }
   },
   "sepolia": {
@@ -48,6 +52,10 @@
     "ERC6551Registry": {
       "address": "0x1981A86783b8b8cE6d03caeA58C263E0806Fa01E",
       "startBlock": 5526164
+    },
+    "Heirloom": {
+      "address": "0x84464897824C77C0Ef39Ea611bAD719B66b2e5c6",
+      "startBlock": 5683199
     }
   },
   "base": {
@@ -74,6 +82,10 @@
     "ERC6551Registry": {
       "address": "0xa2a3561e1Aac9c0F18E1405CC1991c1359581C17",
       "startBlock": 16396111
+    },
+    "Heirloom": {
+      "address": "0x0000000000000000000000000000000000000000",
+      "startBlock": 18828935
     }
   },
   "bsc": {
@@ -96,6 +108,10 @@
     "ERC6551Registry": {
       "address": "0x821db01e7e4C3ec2BC2Aa30A59DD11bCc1B5b951",
       "startBlock": 34525547
+    },
+    "Heirloom": {
+      "address": "0x0000000000000000000000000000000000000000",
+      "startBlock": 18828935
     }
   },
   "matic": {
@@ -118,6 +134,10 @@
     "ERC6551Registry": {
       "address": "0xaD353cA798cD921ae842d0E7e117a654DdF83247",
       "startBlock": 51356908
+    },
+    "Heirloom": {
+      "address": "0x0000000000000000000000000000000000000000",
+      "startBlock": 18828935
     }
   }
 }

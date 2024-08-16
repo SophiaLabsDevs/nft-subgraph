@@ -99,3 +99,14 @@ type OwnershipTransferred @entity(immutable: true) {
   blockTimestamp: BigInt!
   transactionHash: Bytes!
 }
+
+type Module @entity {
+  id: Bytes!
+  densityModule: Bytes! # address
+  moduleId: BigInt! # uint256
+  beneficiary: Bytes! # address
+  timer: BigInt! # uint256
+  claimed: Boolean!
+  blockTimestamp: BigInt!
+  endTimestamp: BigInt!
+}
