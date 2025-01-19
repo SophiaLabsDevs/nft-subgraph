@@ -100,13 +100,17 @@ type OwnershipTransferred @entity(immutable: true) {
   transactionHash: Bytes!
 }
 
-type Module @entity {
+type Booster @entity {
   id: Bytes!
-  densityModule: Bytes! # address
-  moduleId: BigInt! # uint256
-  beneficiary: Bytes! # address
-  timer: BigInt! # uint256
-  claimed: Boolean!
-  blockTimestamp: BigInt!
+  user: Bytes # address
+  startTimestamp: BigInt!
   endTimestamp: BigInt!
+
+  stakeType: BigInt! # months 7776000 = 3M , 15552000 = 6M , 31104000 = 12M;
+  tier: String!
+
+  transferedTo: Bytes #module address
+  hasUnstaked: Boolean!
+  isPaused: Boolean!
+  pausedTimestamp: BigInt
 }

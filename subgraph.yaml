@@ -6,11 +6,10 @@ schema:
 dataSources:
   - kind: ethereum
     name: SentienceModule5
-    network: sepolia
+    network: matic
     source:
       abi: SentienceModule5
-      address: "0xF808252aab4D5aeD10C8a601198319084B0c7e6d"
-      startBlock: 5526164
+      address: "0x0000000000000000000000000000000000000000"
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
@@ -27,11 +26,10 @@ dataSources:
       file: ./src/sentience-module-5.ts
   - kind: ethereum
     name: SentienceModule4
-    network: sepolia
+    network: matic
     source:
       abi: SentienceModule4
-      address: "0x9b031a4f8878Ad4E5F022678c0226704bf66e77c"
-      startBlock: 5526164
+      address: "0x0000000000000000000000000000000000000000"
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
@@ -48,11 +46,10 @@ dataSources:
       file: ./src/sentience-module-4.ts
   - kind: ethereum
     name: SentienceModule3
-    network: sepolia
+    network: matic
     source:
       abi: SentienceModule3
-      address: "0xb8b6Fb00EaA741aa070954d55495616358a74A7d"
-      startBlock: 5526164
+      address: "0x0000000000000000000000000000000000000000"
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
@@ -69,11 +66,10 @@ dataSources:
       file: ./src/sentience-module-3.ts
   - kind: ethereum
     name: SentienceModule2
-    network: sepolia
+    network: matic
     source:
       abi: SentienceModule2
-      address: "0x5d426CF009D91172AA0584935C59F28434fD572a"
-      startBlock: 5526164
+      address: "0x0000000000000000000000000000000000000000"
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
@@ -90,11 +86,11 @@ dataSources:
       file: ./src/sentience-module-2.ts
   - kind: ethereum
     name: SentienceModule1
-    network: sepolia
+    network: matic
     source:
       abi: SentienceModule1
-      address: "0xb0FB186eE2dA2d13BF52Cf917559f5D576797D15"
-      startBlock: 5526164
+      address: "0x7C0bcDb1df296f6E11216365882dEA056c151A97"
+      startBlock: 51356908
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
@@ -111,11 +107,11 @@ dataSources:
       file: ./src/sentience-module-1.ts
   - kind: ethereum
     name: ERC6551Registry
-    network: sepolia
+    network: matic
     source:
       abi: ERC6551Registry
-      address: "0x1981A86783b8b8cE6d03caeA58C263E0806Fa01E"
-      startBlock: 5526164
+      address: "0xaD353cA798cD921ae842d0E7e117a654DdF83247"
+      startBlock: 51356908
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
@@ -134,34 +130,167 @@ dataSources:
           handler: handleOwnershipTransferred
       file: ./src/erc-6551-registry.ts
   - kind: ethereum
-    name: Heirloom
-    network: sepolia
+    name: BoosterBronze
+    network: matic
     source:
-      address: "0x84464897824C77C0Ef39Ea611bAD719B66b2e5c6"
-      abi: Heirloom
-      startBlock: 5683199
+      abi: BoosterBronze
+      address: "0x0000000000000000000000000000000000000000"
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
       language: wasm/assemblyscript
       entities:
-        - ModuleBenefiaryReplaced
-        - ModuleCanceled
-        - ModuleClaimed
-        - ModuleReset
-        - ModuleSet
+        - Booster
       abis:
-        - name: Heirloom
-          file: ./abis/Heirloom.json
+        - name: BoosterBronze
+          file: ./abis/BoosterBronze.json
       eventHandlers:
-        - event: ModuleBenefiaryReplaced(indexed address,indexed uint256,address,address)
-          handler: handleModuleBenefiaryReplaced
-        - event: ModuleCanceled(indexed address,indexed uint256,uint256)
-          handler: handleModuleCanceled
-        - event: ModuleClaimed(indexed address,indexed uint256,address)
-          handler: handleModuleClaimed
-        - event: ModuleReset(indexed address,indexed uint256,uint256)
-          handler: handleModuleReset
-        - event: ModuleSet(indexed address,indexed uint256,indexed address,uint256)
-          handler: handleModuleSet
-      file: ./src/heirloom.ts
+        - event: Paused(address)
+          handler: handlePaused
+        - event: Staked(indexed address,uint256)
+          handler: handleStaked
+        - event: TransferBatch(indexed address,indexed address,indexed
+            address,uint256[],uint256[])
+          handler: handleTransferBatch
+        - event: TransferSingle(indexed address,indexed address,indexed
+            address,uint256,uint256)
+          handler: handleTransferSingle
+        - event: Unpaused(address)
+          handler: handleUnpaused
+        - event: Unstaked(indexed address,uint256)
+          handler: handleUnstaked
+        - event: Upgraded(indexed address,uint256)
+          handler: handleUpgraded
+      file: ./src/booster-bronze.ts
+  - kind: ethereum
+    name: BoosterGold
+    network: matic
+    source:
+      abi: BoosterGold
+      address: "0x0000000000000000000000000000000000000000"
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - Booster
+      abis:
+        - name: BoosterGold
+          file: ./abis/BoosterGold.json
+      eventHandlers:
+        - event: Paused(address)
+          handler: handlePaused
+        - event: Staked(indexed address,uint256)
+          handler: handleStaked
+        - event: TransferBatch(indexed address,indexed address,indexed
+            address,uint256[],uint256[])
+          handler: handleTransferBatch
+        - event: TransferSingle(indexed address,indexed address,indexed
+            address,uint256,uint256)
+          handler: handleTransferSingle
+        - event: Unpaused(address)
+          handler: handleUnpaused
+        - event: Unstaked(indexed address,uint256)
+          handler: handleUnstaked
+        - event: Upgraded(indexed address,uint256)
+          handler: handleUpgraded
+      file: ./src/booster-gold.ts
+  - kind: ethereum
+    name: BoosterDiamond
+    network: matic
+    source:
+      abi: BoosterDiamond
+      address: "0x0000000000000000000000000000000000000000"
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - Booster
+      abis:
+        - name: BoosterDiamond
+          file: ./abis/BoosterDiamond.json
+      eventHandlers:
+        - event: Paused(address)
+          handler: handlePaused
+        - event: Staked(indexed address,uint256)
+          handler: handleStaked
+        - event: TransferBatch(indexed address,indexed address,indexed
+            address,uint256[],uint256[])
+          handler: handleTransferBatch
+        - event: TransferSingle(indexed address,indexed address,indexed
+            address,uint256,uint256)
+          handler: handleTransferSingle
+        - event: Unpaused(address)
+          handler: handleUnpaused
+        - event: Unstaked(indexed address,uint256)
+          handler: handleUnstaked
+        - event: Upgraded(indexed address,uint256)
+          handler: handleUpgraded
+      file: ./src/booster-diamond.ts
+  - kind: ethereum
+    name: BoosterTranscendence
+    network: matic
+    source:
+      abi: BoosterTranscendence
+      address: "0x0000000000000000000000000000000000000000"
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - Booster
+      abis:
+        - name: BoosterTranscendence
+          file: ./abis/BoosterTranscendence.json
+      eventHandlers:
+        - event: Paused(address)
+          handler: handlePaused
+        - event: Staked(indexed address,uint256)
+          handler: handleStaked
+        - event: TransferBatch(indexed address,indexed address,indexed
+            address,uint256[],uint256[])
+          handler: handleTransferBatch
+        - event: TransferSingle(indexed address,indexed address,indexed
+            address,uint256,uint256)
+          handler: handleTransferSingle
+        - event: Unpaused(address)
+          handler: handleUnpaused
+        - event: Unstaked(indexed address,uint256)
+          handler: handleUnstaked
+        - event: Upgraded(indexed address,uint256)
+          handler: handleUpgraded
+      file: ./src/booster-transcendence.ts
+  - kind: ethereum
+    name: BoosterSingularity
+    network: matic
+    source:
+      abi: BoosterSingularity
+      address: "0x0000000000000000000000000000000000000000"
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - Booster
+      abis:
+        - name: BoosterSingularity
+          file: ./abis/BoosterSingularity.json
+      eventHandlers:
+        - event: Paused(address)
+          handler: handlePaused
+        - event: Staked(indexed address,uint256)
+          handler: handleStaked
+        - event: TransferBatch(indexed address,indexed address,indexed
+            address,uint256[],uint256[])
+          handler: handleTransferBatch
+        - event: TransferSingle(indexed address,indexed address,indexed
+            address,uint256,uint256)
+          handler: handleTransferSingle
+        - event: Unpaused(address)
+          handler: handleUnpaused
+        - event: Unstaked(indexed address,uint256)
+          handler: handleUnstaked
+        - event: Upgraded(indexed address,uint256)
+          handler: handleUpgraded
+      file: ./src/booster-singularity.ts

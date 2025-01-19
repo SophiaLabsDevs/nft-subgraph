@@ -21,11 +21,28 @@
       "startBlock": 18828935
     },
     "ERC6551Registry": {
-      "address": "0x2260d743ED99D4Fb5fE051022fC2AfdE4B538362"
-    },
-    "Heirloom": {
-      "address": "0x0000000000000000000000000000000000000000",
+      "address": "0x2260d743ED99D4Fb5fE051022fC2AfdE4B538362",
       "startBlock": 18828935
+    },
+    "BoosterBronze": {
+      "address": "0xA935BcbB41e0eF2a9aE7C5215a1b73826d1D2B93",
+      "startBlock": 19610805
+    },
+    "BoosterGold": {
+      "address": "0x5F62706965ea5E1436936c1B0f063B620AB8194F",
+      "startBlock": 19610805
+    },
+    "BoosterDiamond": {
+      "address": "0x9d03687D63EC77783f756BB65aAd4dcaF3cA530C",
+      "startBlock": 19610805
+    },
+    "BoosterTranscendence": {
+      "address": "0x308136549c3C278e65986952AFb515C4e2908A3D",
+      "startBlock": 19610805
+    },
+    "BoosterSingularity": {
+      "address": "0xC8b23adFDA144d6716437B937Ff84B1BEE5109e7",
+      "startBlock": 19610805
     }
   },
   "sepolia": {
@@ -53,9 +70,25 @@
       "address": "0x1981A86783b8b8cE6d03caeA58C263E0806Fa01E",
       "startBlock": 5526164
     },
-    "Heirloom": {
-      "address": "0x84464897824C77C0Ef39Ea611bAD719B66b2e5c6",
-      "startBlock": 5683199
+    "BoosterBronze": {
+      "address": "0x615439AF911C9f035DF3BE651141Be00c7CA3FEb",
+      "startBlock": 5526331
+    },
+    "BoosterGold": {
+      "address": "0xc65c8991070B6debacAF3E2edD710ff39db080e0",
+      "startBlock": 5526331
+    },
+    "BoosterDiamond": {
+      "address": "0x087eDe2b960deA71Ed8a8a71BC722E8249DeE661",
+      "startBlock": 5526331
+    },
+    "BoosterTranscendence": {
+      "address": "0x0d50dc1026705430F628A572Ca2dB7541f118559",
+      "startBlock": 5526331
+    },
+    "BoosterSingularity": {
+      "address": "0x7202647Ef6abec398bcfA813531737D6491c98B9",
+      "startBlock": 5526331
     }
   },
   "base": {
@@ -83,9 +116,25 @@
       "address": "0xa2a3561e1Aac9c0F18E1405CC1991c1359581C17",
       "startBlock": 16396111
     },
-    "Heirloom": {
-      "address": "0x0000000000000000000000000000000000000000",
-      "startBlock": 18828935
+    "BoosterBronze": {
+      "address": "0x9c97dA3b612DAF503934ab85e4bEa14B2815f11a",
+      "startBlock": 16927293
+    },
+    "BoosterGold": {
+      "address": "0x79d70A1368E831837b60328FFF9c5B3bB4408a95",
+      "startBlock": 16927293
+    },
+    "BoosterDiamond": {
+      "address": "0xdC976B8A9DF7cdCE660E3746729916aEaa4F8643",
+      "startBlock": 16927293
+    },
+    "BoosterTranscendence": {
+      "address": "0xf97F23EE81ccDb0F3ADbC14C7055731C2e38594f",
+      "startBlock": 16927293
+    },
+    "BoosterSingularity": {
+      "address": "0xF1fb11f4D75f19c1acd5B8B6ab07B369dfD884Eb",
+      "startBlock": 16927293
     }
   },
   "bsc": {
@@ -109,9 +158,25 @@
       "address": "0x821db01e7e4C3ec2BC2Aa30A59DD11bCc1B5b951",
       "startBlock": 34525547
     },
-    "Heirloom": {
-      "address": "0x0000000000000000000000000000000000000000",
-      "startBlock": 18828935
+    "BoosterBronze": {
+      "address": "0x0B690a21F53dc76d66a843a65a6A00e0Bc0aFFaE",
+      "startBlock": 37597402
+    },
+    "BoosterGold": {
+      "address": "0x548faa03f4B13Cd8EE22F92752f4D457Bbefbdd6",
+      "startBlock": 37597402
+    },
+    "BoosterDiamond": {
+      "address": "0x8c781A21fC4881C04fA73BBCbFb8A4a4A7aA3061",
+      "startBlock": 37597402
+    },
+    "BoosterTranscendence": {
+      "address": "0x98d722E1963C823d06F43d4294320B47Aa761041",
+      "startBlock": 37597402
+    },
+    "BoosterSingularity": {
+      "address": "0x6E59be7E8caa02D52270a520410dc22c7B5944E5",
+      "startBlock": 37597402
     }
   },
   "matic": {
@@ -135,9 +200,20 @@
       "address": "0xaD353cA798cD921ae842d0E7e117a654DdF83247",
       "startBlock": 51356908
     },
-    "Heirloom": {
-      "address": "0x0000000000000000000000000000000000000000",
-      "startBlock": 18828935
+    "BoosterBronze": {
+      "address": "0x0000000000000000000000000000000000000000"
+    },
+    "BoosterGold": {
+      "address": "0x0000000000000000000000000000000000000000"
+    },
+    "BoosterDiamond": {
+      "address": "0x0000000000000000000000000000000000000000"
+    },
+    "BoosterTranscendence": {
+      "address": "0x0000000000000000000000000000000000000000"
+    },
+    "BoosterSingularity": {
+      "address": "0x0000000000000000000000000000000000000000"
     }
   }
 }
